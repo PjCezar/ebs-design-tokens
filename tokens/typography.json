@@ -1,0 +1,116 @@
+{
+  "$schema": "https://raw.githubusercontent.com/token-compat/design-tokens/main/schema.json",
+  "$metadata": {
+    "source": "EBS Themes and Components.msapp + SJ Group Identity & Purpose Toolkit",
+    "component": "cmp_EBS_Theme_V1",
+    "property": "act_Typography",
+    "extractedBy": "powerapps-design-tokens",
+    "version": "1.1.0"
+  },
+  "typography": {
+
+    "font": {
+      "$comment": "SJ Group brand font stack. Primary is SJ Söhne (licensed, rolled out progressively by Global IT). Falls back to system fonts for web/app compatibility. Segoe UI retained as final fallback for Power Platform environments.",
+      "family": {
+        "$value": "'SJ Söhne', 'SJ Sohne', Aptos, Calibri, 'Segoe UI', sans-serif",
+        "$type": "fontFamily"
+      },
+      "family-heading": {
+        "$comment": "SJ Söhne Kräftig for main headings and pull quotes",
+        "$value": "'SJ Söhne Kräftig', 'SJ Sohne Kraftig', Aptos, Calibri, 'Segoe UI', sans-serif",
+        "$type": "fontFamily"
+      },
+      "family-heading-italic": {
+        "$comment": "SJ Söhne Kräftig Kursiv for italicised headings",
+        "$value": "'SJ Söhne Kräftig Kursiv', 'SJ Sohne Kraftig Kursiv', Aptos, Calibri, 'Segoe UI', sans-serif",
+        "$type": "fontFamily"
+      },
+      "family-body": {
+        "$comment": "SJ Söhne Buch for body copy, captions and labels",
+        "$value": "'SJ Söhne Buch', 'SJ Sohne Buch', Aptos, Calibri, 'Segoe UI', sans-serif",
+        "$type": "fontFamily"
+      },
+      "family-body-italic": {
+        "$comment": "SJ Söhne Buch Kursiv for italicised body copy",
+        "$value": "'SJ Söhne Buch Kursiv', 'SJ Sohne Buch Kursiv', Aptos, Calibri, 'Segoe UI', sans-serif",
+        "$type": "fontFamily"
+      }
+    },
+
+    "weight": {
+      "$comment": "Font weight scale — maps to SJ Söhne variants and standard CSS weights",
+      "regular":   { "$value": 400, "$type": "fontWeight" },
+      "medium":    { "$value": 500, "$type": "fontWeight" },
+      "semibold":  { "$value": 600, "$type": "fontWeight" },
+      "bold":      { "$value": 700, "$type": "fontWeight" }
+    },
+
+    "scale": {
+      "$comment": "Type scale using rem (base 16px) for Code App / React / Fluent UI v9 best practice. lineHeight is unitless ratio. canvasHeight and canvasWidth retained for backward-reference to original Canvas act_Typography values.",
+
+      "small": {
+        "$comment": "Captions, labels, helper text",
+        "fontSize":      { "$value": "0.75rem",  "$type": "dimension", "$canvas-px": 12 },
+        "lineHeight":    { "$value": 1.5,         "$type": "number" },
+        "fontWeight":    { "$value": 400,         "$type": "fontWeight" },
+        "canvasHeight":  { "$value": 32,          "$type": "dimension", "$comment": "Original Canvas control height" },
+        "canvasWidth":   { "$value": 120,         "$type": "dimension", "$comment": "Original Canvas control width" }
+      },
+
+      "medium": {
+        "$comment": "Body copy, form labels, nav items",
+        "fontSize":      { "$value": "1rem",     "$type": "dimension", "$canvas-px": 16 },
+        "lineHeight":    { "$value": 1.5,         "$type": "number" },
+        "fontWeight":    { "$value": 400,         "$type": "fontWeight" },
+        "canvasHeight":  { "$value": 48,          "$type": "dimension" },
+        "canvasWidth":   { "$value": 250,         "$type": "dimension" }
+      },
+
+      "large": {
+        "$comment": "Section headings, card titles",
+        "fontSize":      { "$value": "1.125rem", "$type": "dimension", "$canvas-px": 18 },
+        "lineHeight":    { "$value": 1.4,         "$type": "number" },
+        "fontWeight":    { "$value": 600,         "$type": "fontWeight" },
+        "canvasHeight":  { "$value": 56,          "$type": "dimension" },
+        "canvasWidth":   { "$value": 300,         "$type": "dimension" }
+      },
+
+      "extra-large": {
+        "$comment": "Page titles, modal headings",
+        "fontSize":      { "$value": "1.375rem", "$type": "dimension", "$canvas-px": 22 },
+        "lineHeight":    { "$value": 1.3,         "$type": "number" },
+        "fontWeight":    { "$value": 600,         "$type": "fontWeight" },
+        "canvasHeight":  { "$value": 64,          "$type": "dimension" },
+        "canvasWidth":   { "$value": 400,         "$type": "dimension" }
+      },
+
+      "extra-extra-large": {
+        "$comment": "Hero headings, dashboard KPI figures",
+        "fontSize":      { "$value": "1.625rem", "$type": "dimension", "$canvas-px": 26 },
+        "lineHeight":    { "$value": 1.2,         "$type": "number" },
+        "fontWeight":    { "$value": 700,         "$type": "fontWeight" },
+        "canvasHeight":  { "$value": 72,          "$type": "dimension" },
+        "canvasWidth":   { "$value": 500,         "$type": "dimension" }
+      }
+    },
+
+    "control": {
+      "$comment": "Fixed sizes for interactive controls. height uses rem for Code App; canvasHeight retained for Canvas reference.",
+
+      "button": {
+        "fontSize":      { "$value": "0.75rem", "$type": "dimension", "$canvas-px": 12 },
+        "height":        { "$value": "2.1875rem", "$type": "dimension", "$canvas-px": 35 },
+        "minWidth":      { "$value": "7.5rem",  "$type": "dimension", "$canvas-px": 120 },
+        "fontWeight":    { "$value": 600,        "$type": "fontWeight" }
+      },
+
+      "text-field": {
+        "fontSize":      { "$value": "0.75rem", "$type": "dimension", "$canvas-px": 12 },
+        "height":        { "$value": "2.1875rem", "$type": "dimension", "$canvas-px": 35 },
+        "minWidth":      { "$value": "9.375rem", "$type": "dimension", "$canvas-px": 150 },
+        "fontWeight":    { "$value": 400,        "$type": "fontWeight" }
+      }
+    }
+
+  }
+}

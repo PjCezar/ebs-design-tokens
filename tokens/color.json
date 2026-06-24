@@ -1,0 +1,73 @@
+{
+  "$schema": "https://raw.githubusercontent.com/token-compat/design-tokens/main/schema.json",
+  "$metadata": {
+    "source": "EBS Themes and Components.msapp",
+    "component": "cmp_EBS_Theme_V1",
+    "property": "act_Theme",
+    "extractedBy": "powerapps-design-tokens",
+    "version": "1.0.0"
+  },
+  "color": {
+
+    "primary": {
+      "$comment": "Impact Blue — main brand color",
+      "default":    { "$value": "#1257fd", "$type": "color" },
+      "light":      { "$value": "#4179fd", "$type": "color" },
+      "light-60":   { "$value": "#719afe", "$type": "color" },
+      "light-40":   { "$value": "#a0bcfe", "$type": "color" },
+      "light-20":   { "$value": "#d0ddfe", "$type": "color" }
+    },
+
+    "secondary": {
+      "$comment": "Impact Red — highlight and danger",
+      "default":    { "$value": "#ed2023", "$type": "color" },
+      "light":      { "$value": "#f14f52", "$type": "color" }
+    },
+
+    "tertiary": {
+      "$comment": "Impact Gray — borders, shadows, hover backgrounds",
+      "default":    { "$value": "#e6e6e6", "$type": "color" },
+      "light":      { "$value": "#ebebeb", "$type": "color" },
+      "light-60":   { "$value": "#f0f0f0", "$type": "color" },
+      "light-40":   { "$value": "#f5f5f5", "$type": "color" },
+      "light-20":   { "$value": "#fafafa", "$type": "color" }
+    },
+
+    "quaternary": {
+      "$comment": "Impact Space Gray — labels and body text",
+      "default":    { "$value": "#383838", "$type": "color" },
+      "light":      { "$value": "#606060", "$type": "color" },
+      "light-60":   { "$value": "#888888", "$type": "color" },
+      "light-40":   { "$value": "#afafaf", "$type": "color" },
+      "light-20":   { "$value": "#d7d7d7", "$type": "color" }
+    },
+
+    "neutral": {
+      "white":       { "$value": "#ffffff", "$type": "color" },
+      "black":       { "$value": "#000000", "$type": "color" },
+      "black-light": { "$value": "#393d3d", "$type": "color" }
+    },
+
+    "semantic": {
+      "$comment": "Semantic colors for system feedback states",
+      "success":  { "$value": "#22BB33", "$type": "color" },
+      "warning":  { "$value": "#FFDE21", "$type": "color" },
+      "error":    { "$value": "#ed2023", "$type": "color" },
+      "info":     { "$value": "#007BFF", "$type": "color" }
+    },
+
+    "text": {
+      "$comment": "Text and link colors",
+      "default":  { "$value": "#383838", "$type": "color" },
+      "light":    { "$value": "#606060", "$type": "color" },
+      "link":     { "$value": "#0000EE", "$type": "color" }
+    },
+
+    "surface": {
+      "$comment": "Background and surface colors",
+      "screen":   { "$value": "#f5f5f5", "$type": "color" },
+      "disabled": { "$value": "#f5f5f5", "$type": "color" }
+    }
+
+  }
+}
